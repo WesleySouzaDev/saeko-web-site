@@ -12,7 +12,7 @@ export function ToggleLogoTheming() {
 		setMounted(true);
 	}, []);
 
-	if (theme === "dark") {
+	if (theme === "dark" || theme === "system" || !mounted) {
 		return (
 			<Image
 				src={"/logo.png"}
