@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	description: "Home of Saeko Store",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<>
 			<html lang="pt-br" suppressHydrationWarning>
