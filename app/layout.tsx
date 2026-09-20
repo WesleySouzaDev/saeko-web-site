@@ -36,10 +36,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 					>
 						<SidebarProvider>
 							<AppSidebar />
-							<SidebarInset>
+							<div className="flex flex-col w-full">
 								<Header />
-								<main className="w-full h-full">{children}</main>
-							</SidebarInset>
+								<SidebarInset>{children}</SidebarInset>
+							</div>
 						</SidebarProvider>
 					</ThemeProvider>
 				</body>
