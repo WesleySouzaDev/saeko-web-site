@@ -198,3 +198,15 @@
 	padding: 2rem;
 	@apply rounded-lg;
 }
+
+.surgeFromBottom {
+	opacity: 0;
+	animation: surgeFromBottom 1s ease forwards;
+}
+
+@keyframes surgeFromBottom {
+	to {
+		transform: translateY(-15px);
+		opacity: 1;
+	}
+}
