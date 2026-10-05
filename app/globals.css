@@ -196,5 +196,5 @@
 
 .section {
 	padding: 2rem;
-	@apply bg-card rounded-lg;
+	@apply rounded-lg;
 }
