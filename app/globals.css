@@ -194,6 +194,7 @@
 	@apply bg-primary text-white rounded-md;
 }
 
-.item[data-state="select"] {
-	@apply bg-primary text-white rounded-md;
+.section {
+	padding: 2rem;
+	@apply bg-card rounded-lg;
 }
