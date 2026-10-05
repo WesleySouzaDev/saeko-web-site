@@ -1,3 +1,3 @@
 export default async function Main() {
-	return <section>Camisetas</section>;
+	return <section>Shorts</section>;
 }

@@ -7,13 +7,13 @@ import {
 	SidebarMenu,
 	SidebarMenuButton,
 	SidebarMenuItem,
+	SidebarGroupLabel,
 } from "@/components/ui/sidebar";
 
-import Image from "next/image";
-import { Button } from "./ui/button";
-import { ToggleLogoTheming } from "./helpers/toggle-logo=theming";
+import { ToggleLogoTheming } from "../helpers/toggle-logo=theming";
+import CollapsibleSidebarGroup from "./collapsible-sidebar-group";
 
-export function AppSidebar() {
+export default async function AppSidebar() {
 	return (
 		<Sidebar>
 			<SidebarHeader className="border-b border-foreground/10">
@@ -24,9 +24,11 @@ export function AppSidebar() {
 			<SidebarMenu>
 				<SidebarContent>
 					<SidebarGroup>
-						<SidebarMenuButton>Clique auqi</SidebarMenuButton>
+						<SidebarGroupLabel className="font-bold text-primary uppercase tracking-tight">
+							Roupas
+						</SidebarGroupLabel>
+						<CollapsibleSidebarGroup />
 					</SidebarGroup>
-					<SidebarGroup></SidebarGroup>
 				</SidebarContent>
 			</SidebarMenu>
 			<SidebarFooter></SidebarFooter>

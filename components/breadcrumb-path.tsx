@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathNameState } from "@/hooks/use-pathname";
 import { Fragment, useEffect, useState } from "react";
 
 import {
@@ -16,7 +16,7 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function BreadcrumbPath() {
-	const pathname = usePathname();
+	const pathname = usePathNameState();
 	const [paths, setPaths] = useState<string[]>([]);
 	const ismobile = useIsMobile();
 
@@ -29,7 +29,7 @@ export default function BreadcrumbPath() {
 		<Breadcrumb>
 			<BreadcrumbList>
 				<BreadcrumbItem>
-					<BreadcrumbLink render={<a href="/">Home</a>} />
+					<BreadcrumbLink render={<Link href="/">Home</Link>} />
 				</BreadcrumbItem>
 				<BreadcrumbSeparator />
 				{paths.map((path, index) => {
