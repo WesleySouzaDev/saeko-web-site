@@ -10,7 +10,7 @@ import {
 	SidebarGroupLabel,
 } from "@/components/ui/sidebar";
 
-import { ToggleLogoTheming } from "../helpers/toggle-logo=theming";
+import { ToggleLogoTheming } from "@/components/helpers/toggle-logo-theming";
 import CollapsibleSidebarGroup from "./collapsible-sidebar-group";
 
 export default async function AppSidebar() {
@@ -24,9 +24,6 @@ export default async function AppSidebar() {
 			<SidebarMenu>
 				<SidebarContent>
 					<SidebarGroup>
-						<SidebarGroupLabel className="font-bold text-primary uppercase tracking-tight">
-							Roupas
-						</SidebarGroupLabel>
 						<CollapsibleSidebarGroup />
 					</SidebarGroup>
 				</SidebarContent>
