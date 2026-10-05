@@ -27,7 +27,9 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<>
 			<html lang="pt-br" suppressHydrationWarning>
-				<body>
+				<body
+					className={`${(geistSans.className, geistMono.variable)} antialiased`}
+				>
 					<ThemeProvider
 						attribute="class"
 						defaultTheme="system"
