@@ -201,12 +201,12 @@
 
 .surgeFromBottom {
 	opacity: 0;
-	animation: surgeFromBottom 1s ease forwards;
+	animation: surgeFromBottom 0.5s ease forwards;
 }
 
 @keyframes surgeFromBottom {
 	to {
-		transform: translateY(-15px);
+		transform: translateY(0px);
 		opacity: 1;
 	}
 }

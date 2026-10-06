@@ -35,16 +35,14 @@ export function CollapsibleSidebarNav({
 			open={defaultOpen}
 			onOpenChange={setDefaultOpen}
 			data-state={defaultOpen ? "open" : "closed"}
-			className="group"
+			className="group "
 		>
 			<CollapsibleTrigger
-				className="
-      group
+				className="group
       flex w-full cursor-pointer items-center
       rounded-md px-2 py-2 text-start text-lg
       tracking-tighter text-foreground
-      duration-100 hover:bg-foreground/10
-    "
+      duration-100 hover:bg-foreground/10 bg-card my-2"
 			>
 				{title}
 
